@@ -1,11 +1,14 @@
 #!/bin/bash
 
-if [ -z $1 ]
-    then
-        echo "************************************** Missing 'tag' argument. Usage : deploy.sh [tag] [message]"
+if [ $# -ne 2 ]; then
+    echo "************************************** Missing arguments. Usage : deploy.sh [version] [message]"
 else
-    TAG=$1
+    VERSION=$1
     MESSAGE=$2
-    echo "************************************** Adding tag $1 **************************************"
-    echo $1
+    echo "************************************** Commit changes '$MESSAGE' **************************************"
+    git add .
+    # echo `git status`
+    git commit -m "$MESSAGE"
+    echo "************************************** Adding tag $VERSION and push to Github **************************************"
+    npm version $VERSION -m "Adding version $VERSION"
 fi

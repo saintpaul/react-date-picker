@@ -1,6 +1,6 @@
 {
-  "name": "react-commons",
-  "version": "2.0.1",
+  "name": "react-date-picker",
+  "version": "1.0.0",
   "description": "Set of reusable components for reactjs applications",
   "main": "./lib/index.js",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saintpaul/react-commons.git"
+    "url": "git+https://github.com/saintpaul/react-date-picker.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/saintpaul/react-commons/issues"
+    "url": "https://github.com/saintpaul/react-date-picker/issues"
   },
-  "homepage": "https://github.com/saintpaul/react-commonst#readme",
+  "homepage": "https://github.com/saintpaul/react-date-picker#readme",
   "dependencies": {
     "aggregation": "^0.9.7",
     "classnames": "~2.2.0",
