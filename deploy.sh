@@ -11,4 +11,6 @@ else
     git commit -m "$MESSAGE"
     echo "************************************** Adding tag $VERSION and push to Github **************************************"
     npm version $VERSION -m "Adding version $VERSION"
+    git push
+    git push --tags
 fi
