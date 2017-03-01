@@ -6,7 +6,7 @@ class RefluxComponent extends aggregation(React.Component, RefluxListener) {
 
     constructor() {
         super();
-        console.log("Test 3")
+        console.log("Test 4")
     }
 }
 
